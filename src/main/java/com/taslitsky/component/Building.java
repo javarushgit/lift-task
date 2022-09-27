@@ -19,7 +19,6 @@ public class Building {
     floorCount = minFloor + random.nextInt(maxFloor-minFloor+1);
     floorList = new ArrayList<>(floorCount);
     for (int i = 0; i < floorCount; i++) {
-      System.out.println("hello");
       floorList.add(new Floor(this,i));
     }
   }
