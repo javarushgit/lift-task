@@ -10,7 +10,7 @@ public class Lift {
   private int currentFloor;
   private List<Person> people;
 
-  public Lift(){
+  public Lift() {
     LiftPropertiesReader propertiesReader = new LiftPropertiesReader();
     maxCapacity = propertiesReader.getMaxCapacity();
     currentFloor = propertiesReader.getStartFloor();
