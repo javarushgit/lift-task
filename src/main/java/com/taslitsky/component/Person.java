@@ -13,12 +13,9 @@ public class Person {
   }
 
   public Person(Floor floor) {
-    System.out.println("6");
     this.floor = floor;
     this.currentFloor = floor.getFloorId();
-    System.out.println("7.1");
     generateNeededFloor();
-    System.out.println("7");
     direction = currentFloor < neededFloor ? Direction.UP : Direction.DOWN;
   }
 
